@@ -25,7 +25,7 @@ public class ApplianceGenerator {
 
 	public static void main( String [] args ) throws IOException {
 		Appliance [] app = new Appliance[100];  // default 100 possible appliance types
-		File inputFile = new File( "/Users/adriansalcedo/Desktop/Comp Sci/Eclipse Workspace/GroupProject/src/project/ApplianceDetail.txt" );
+		File inputFile = new File( "/Users/adriansalcedo/git/SImulation/GroupProject/src/project/ApplianceDetail.txt" );
 		Scanner scan = new Scanner( inputFile );
 		int count=0;
 		while ( scan.hasNext( ) ) {
@@ -49,7 +49,7 @@ Smart appliances (if "on") power reduction percent when changed to "low" status(
 */
 		try
 		{
-			FileWriter fw = new FileWriter( "/Users/adriansalcedo/Desktop/Comp Sci/Eclipse Workspace/GroupProject/src/project/app.txt", false);
+			FileWriter fw = new FileWriter( "/Users/adriansalcedo/git/SImulation/GroupProject/src/project/app.txt", false);
 			BufferedWriter bw = new BufferedWriter( fw );
 			for (long location=1;location<=100 ;location++ ) {   // default 100 locations
 				int applianceCount=(int)(Math.random()*6)+15;  //15-20 appliances per location 

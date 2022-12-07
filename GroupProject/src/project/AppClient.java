@@ -86,84 +86,32 @@ class AppClient{
 				String newAppliance ="";
 				System.out.println("Enter a location");
 				String input= scan.nextLine();
-				do {
-					try 
-					{ 
-						Integer.parseInt(input);
-						System.out.println(input  + " is your location ID"); 
-						break;
-					}  
-					catch (NumberFormatException e)  
-					{ 
-						System.out.println(input + " is not a valid location"); 
-					} 
-					System.out.println("Enter a different location ");
-				    input = scan.nextLine();
-				}while(true);
 				newAppliance+=input+",";
 				System.out.println("Enter the name of the application");
 				input = scan.nextLine();
 				newAppliance+=input+",";
 				System.out.println("Enter the power it uses when turned on");
-				while (true) {
-			        input = scan.nextLine();
-			        try {
-			            int n = Integer.parseInt(input);
-			            if (n > 0) {
-			                break;
-			            }
-			        } catch (NumberFormatException e) {
-			            // ok to ignore: let it fall through to print error message and try next line
-			        }
-			        System.out.println("Error: input must be a positive integer.");
-			    }
+				input = scan.nextLine();
 				newAppliance+=input+",";
 				System.out.println("Enter the probability of the application staying on");
-				while (true) {
-			        input = scan.nextLine();
-			        try {
-			            double n = Double.parseDouble(input);
-			            if (n > 0&&n<1) {
-			                break;
-			            }
-			        } catch (NumberFormatException e) {
-			            // ok to ignore: let it fall through to print error message and try next line
-			        }
-			        System.out.println("Error: input must be between 0 and 1.");
-			    }
+				input = scan.nextLine();
 				newAppliance+=input+",";
 				System.out.println("Is it a smart appliance?");
 				input=scan.nextLine();
-				while(true){
-					if("true".equals(input)||("false".equals(input))) {
-						break;
-					}else
-					System.out.println("Error: input must be true or false");
-					input = scan.nextLine();
-				}
 				newAppliance+=input+",";
-				if(input.equals("true")) {
+				if(input.equals("yes")) {
 					System.out.println("Enter power reduction percent when changed low status");
-					while (true) {
+					
 				        input = scan.nextLine();
-				        try {
-				            double n = Double.parseDouble(input);
-				            if (n > 0&&n<1) {
-				            	newAppliance+=input;
-				                break;
-				            }
-				        } catch (NumberFormatException e) {
-				            // ok to ignore: let it fall through to print error message and try next line
-				        }
-				        System.out.println("Error: input must be between 0 and 1.");
-				    }
+				        
+				    
 				}
 				else
 					newAppliance+="0.0";
 				
 				try
 				{
-				    String filename= "/Users/adriansalcedo/Desktop/Comp Sci/Eclipse Workspace/GroupProject/src/project/app.txt";
+				    String filename= "/Users/adriansalcedo/git/SImulation/GroupProject/src/project/app.txt";
 				    FileWriter fw = new FileWriter(filename,true); //the true will append the new data
 				    fw.write(newAppliance+"\n");//appends the string to the file
 				    fw.close();
