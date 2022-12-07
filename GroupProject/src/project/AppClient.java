@@ -53,6 +53,7 @@ class AppClient{
 			scan.close();
 		}catch(IOException ioe){ 
 			System.out.println("The file can not be read");
+			System.out.println("The file can not be read");
 		}
 	}
 	
