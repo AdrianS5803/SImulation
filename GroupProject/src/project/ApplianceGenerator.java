@@ -8,14 +8,14 @@ import java.io.FileWriter;
 import java.io.BufferedWriter;
 
 public class ApplianceGenerator {
-	public static class Appliance {
+	public static class App {
 		public String name;
 		public int onW, offW; 
 		public double probOn; 
 		public boolean smart; 
 		public double probSmart;
 
-		public Appliance (String n, int on, int off, double pOn, boolean s, double pSmart)
+		public App (String n, int on, int off, double pOn, boolean s, double pSmart)
 		{ name=n; onW=on; offW=off; probOn=pOn; smart=s; probSmart=pSmart; }
 
 		public String toString () {
@@ -24,13 +24,13 @@ public class ApplianceGenerator {
 	}
 
 	public static void main( String [] args ) throws IOException {
-		Appliance [] app = new Appliance[100];  // default 100 possible appliance types
+		App [] app = new App[100];  // default 100 possible appliance types
 		File inputFile = new File( "/Users/adriansalcedo/git/SImulation/GroupProject/src/project/ApplianceDetail.txt" );
 		Scanner scan = new Scanner( inputFile );
 		int count=0;
 		while ( scan.hasNext( ) ) {
 			StringTokenizer stringToken = new StringTokenizer(scan.nextLine());
-			app[count] = new Appliance(stringToken.nextToken(","),
+			app[count] = new App(stringToken.nextToken(","),
 						Integer.parseInt(stringToken.nextToken(",")),
 						Integer.parseInt(stringToken.nextToken(",")),
 						Double.parseDouble(stringToken.nextToken(",")),

@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import project.ApplianceGenerator.Appliance;
+//import project.ApplianceGenerator.Appliance;
 
 //import project.ApplianceGenerator.Appliance;
 class AppClient{
@@ -65,7 +65,8 @@ class AppClient{
 		String option1, option2;
 		Scanner scan = new Scanner(System.in);
 		//app.readAppFile("/Users/adriansalcedo/Desktop/Comp Sci/Eclipse Workspace/GroupProject/src/project/app.txt");
-		while(true){// Application menu to be displayed to the user.
+		while(true){
+			// Application menu to be displayed to the user.
 			System.out.println("Select an option:");
 			System.out.println("Type \"A\" Add an appliance");
 			System.out.println("Type \"D\" Delete an appliance");	
@@ -73,8 +74,9 @@ class AppClient{
 			System.out.println("Type \"F\" Read Appliances from a file");
 			System.out.println("Type \"S\" To Start the simulation");
 			System.out.println("Type \"Q\" Quit the program");
-			option1=scan.nextLine();
 			
+			option1=scan.nextLine();
+			System.out.println(option1);
 			
 			//System.out.println(option1);
 			/* Complete the skeleton code below */
@@ -101,10 +103,7 @@ class AppClient{
 				newAppliance+=input+",";
 				if(input.equals("yes")) {
 					System.out.println("Enter power reduction percent when changed low status");
-					
-				        input = scan.nextLine();
-				        
-				    
+					input = scan.nextLine();
 				}
 				else
 					newAppliance+="0.0";
@@ -132,8 +131,8 @@ class AppClient{
 			else if(option1.equals("D")) {
 				System.out.println("Select what appliance you would like to delete");
 				
-				String tempFile = "/Users/adriansalcedo/Desktop/Comp Sci/Eclipse Workspace/GroupProject/src/project/temp.txt";
-				File oldFile = new File ("/Users/adriansalcedo/Desktop/Comp Sci/Eclipse Workspace/GroupProject/src/project/app.txt");
+				String tempFile = "/Users/adriansalcedo/git/SImulation/GroupProject/src/project/temp.txt";
+				File oldFile = new File ("/Users/adriansalcedo/git/SImulation/GroupProject/src/project/app.txt");
 				File newFile = new File (tempFile);
 				int line = 0;
 				String currentLine; 
@@ -143,7 +142,7 @@ class AppClient{
 				FileWriter fw = new FileWriter (tempFile, true);
 				BufferedWriter bw = new BufferedWriter (fw);
 				PrintWriter pw = new PrintWriter (bw);
-				FileReader fr = new FileReader ("/Users/adriansalcedo/Desktop/Comp Sci/Eclipse Workspace/GroupProject/src/project/app.txt");
+				FileReader fr = new FileReader ("/Users/adriansalcedo/git/SImulation/GroupProject/src/project/app.txt");
 				BufferedReader br = new BufferedReader (fr);
 					while ((currentLine = br.readLine()) != null){
 						line++;
@@ -158,7 +157,7 @@ class AppClient{
 					bw.close();
 					fw.close();
 					oldFile.delete();
-					File dump = new File ("/Users/adriansalcedo/Desktop/Comp Sci/Eclipse Workspace/GroupProject/src/project/app.txt");
+					File dump = new File ("/Users/adriansalcedo/git/SImulation/GroupProject/src/project/app.txt");
 					newFile.renameTo (dump);
 				}
 				
@@ -171,7 +170,7 @@ class AppClient{
 			
 			
 			else if(option1.equals("L")) {
-				app.readAppFile("/Users/adriansalcedo/Desktop/Comp Sci/Eclipse Workspace/GroupProject/src/project/app.txt");
+				app.readAppFile("/Users/adriansalcedo/git/SImulation/GroupProject/src/project/app.txt");
 				
 			}else if(option1.equals("F")) {
 				System.out.println("Enter file you would like to read");
@@ -182,19 +181,8 @@ class AppClient{
 			
 			else if(option1.equals("S")) {
 				System.out.println("Enter the total allowed wattage (power)");
-				String maxPower;
-				while (true) {
-			        maxPower = scan.nextLine();
-			        try {
-			            int n = Integer.parseInt(maxPower);
-			            if (n > 0) {
-			                break;
-			            }
-			        } catch (NumberFormatException e) {
-			            // ok to ignore: let it fall through to print error message and try next line
-			        }
-			        System.out.println("Error: input must be a positive integer.");
-			    }
+				int maxPower;
+				maxPower= scan.nextInt();
 				System.out.println("Enter the comma separated text file containing the appliances.");
 				option2= scan.nextLine();
 				while(true) {
