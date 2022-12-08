@@ -1,5 +1,7 @@
 package project;
 
+import inClass.Car;
+
 public class App {
 	private int locationID;
 	private String appName;
@@ -16,6 +18,7 @@ public class App {
 		this.probStayOn = prob;
 		this.smart = t;
 		this.appID = App.counter;
+		App.counter++;
 		
 	}
 	

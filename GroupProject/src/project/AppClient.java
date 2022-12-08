@@ -48,8 +48,8 @@ class AppClient{
 					  lowPower = Integer.parseInt(details[5]); 
 					  aAppl = new SmartApp(locationID, appName,onPower, probOn, lowPower,Boolean.parseBoolean(appType) ); 
 					} 
-				  else{ aAppl =
-					  new RegApp(locationID, appName, onPower, probOn,Boolean.parseBoolean(appType)); 
+				  else{ 
+					  aAppl = new RegApp(locationID, appName, onPower, probOn,Boolean.parseBoolean(appType)); 
 				  }
 				 
 				
