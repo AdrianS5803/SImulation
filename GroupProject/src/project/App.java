@@ -4,12 +4,12 @@ public class App {
 	private int locationID;
 	private String appName;
 	private int wattageOn;
-	private double probStayOn;
+	private float probStayOn;
 	private boolean smart;
 	private static int counter = 0;
 	private int appID;
 	
-	public App ( int I, String AppName, int O, double prob, boolean t) {
+	public App ( int I, String AppName, int O, float prob, boolean t) {
 		this.locationID = I;
 		this.appName = AppName;
 		this.wattageOn = O;
@@ -18,12 +18,16 @@ public class App {
 		this.appID = App.counter;
 		
 	}
+	
+	public App(int locationID2, String appName2, int onPower, float probOn, boolean parseBoolean, double lowPower) {
+		// TODO Auto-generated constructor stub
+	}
 	public int getlocationID()
 	{
 		return locationID;
 	}
 	
-	public String appName()
+	public String getAppName()
 	{
 		return appName;
 	}
@@ -33,7 +37,7 @@ public class App {
 		return wattageOn;
 	}
 	
-	public double probStayOn()
+	public double probStayOn(App applic)
 	{
 		return probStayOn;
 	}
@@ -63,7 +67,7 @@ public class App {
 		wattageOn=x;
 	}
 	
-	public void setonoffprob(double i)
+	public void setonoffprob(float i)
 	{
 		probStayOn=i;
 	}

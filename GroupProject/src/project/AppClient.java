@@ -29,7 +29,7 @@ class AppClient{
 			float probOn;
 			String appType;
 			double lowPower;
-			Appliance aAppl;
+			App aAppl;
 			
 			/*Complete the method*/
 			//aAppl = new Appliance();
@@ -37,18 +37,17 @@ class AppClient{
 		      {
 		         // Read the next name.
 				str = scan.nextLine();
+				/*
+				 * String[] details = str.split(","); locationID = Integer.parseInt(details[0]);
+				 * appName = details[1]; onPower = Integer.parseInt(details[2]); probOn =
+				 * Float.parseFloat(details[3]); appType = details[4];
+				 * if(appType.equalsIgnoreCase("TRUE")){ lowPower =
+				 * Integer.parseInt(details[5]); aAppl = new SmartApp(locationID, appName,
+				 * onPower, probOn, lowPower,Boolean.parseBoolean(appType) ); } else{ aAppl =
+				 * new RegApp(locationID, appName, onPower, probOn,
+				 * Boolean.parseBoolean(appType)); }
+				 */
 				
-		         // Display the last name read.
-		         System.out.println(str);
-//		         String[] types = new String[6]; 
-//		         types = str.split(",");
-//		         locationID = Integer.parseInt(types[0]);
-//		         appName = types[1];
-//		         onPower = Integer.parseInt(types[2]);
-//		         probOn = Float.parseFloat(types[3]);
-//		         appType = Boolean.parseBoolean(types[4]);
-//		         lowPower = Integer.parseInt(types[5]);
-		         //aAppl = new Appliance(locationID,appName,onPower,probOn,appType,lowPower);
 		      }
 			scan.close();
 		}catch(IOException ioe){ 
@@ -100,13 +99,14 @@ class AppClient{
 				newAppliance+=input+",";
 				System.out.println("Is it a smart appliance?");
 				input=scan.nextLine();
-				newAppliance+=input+",";
+				//newAppliance+=input+",";
 				if(input.equals("yes")) {
 					System.out.println("Enter power reduction percent when changed low status");
 					input = scan.nextLine();
+					newAppliance+="true,"+input;
 				}
 				else
-					newAppliance+="0.0";
+					newAppliance+="false,0.0";
 				
 				try
 				{
@@ -196,9 +196,8 @@ class AppClient{
 					}
 					System.out.println("The file can not be read");
 					option2 = scan.nextLine();
-					
 				}
-				
+				 
 				break;
 			}else if(option1.equals("Q")) {
 				break;
