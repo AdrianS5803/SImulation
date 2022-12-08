@@ -12,14 +12,20 @@ public class SmartApp extends App
 	
 	public void lowvoltage()
 	{
-		double lowvolt=(super.wattageOn)-(super.wattageOn*percentDrop);
+		double lowvolt=(super.getwattageOn())-(super.getwattageOn()*percentDrop);
 		super.setonnwattage((int)lowvolt);
+	}
+	
+	public void brownoutWatts(App application) 
+	{
+		int brownoutWatts = (super.getwattageOn())-(super.getwattageOn()*0);
+		super.setonnwattage(brownoutWatts);
 	}
 	
 	public String toString()
 	{
 		String localApp;
-		localApp ="Location ID" + super.locationID+"\n Appliance Name: " + super.appName+"\n ApplianceID: " + super.appID;
+		localApp ="Location ID" + super.getlocationID()+"\n Appliance Name: " + super.appName()+"\n ApplianceID: " + super.getappID();
 		return localApp;
 	}
 }
