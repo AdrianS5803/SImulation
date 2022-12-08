@@ -1,5 +1,6 @@
 package project;
 
+
 public class RegApp extends App
 {
 	double percentDrop;
@@ -11,14 +12,20 @@ public class RegApp extends App
 	
 	public void lowvoltage()
 	{
-		double lowvolt=(super.wattageOn)-(super.wattageOn*0);
+		double lowvolt=(super.getwattageOn())-(super.getwattageOn()*0);
 		super.setonnwattage((int)lowvolt);
+	}
+	
+	public void brownoutWatts(App application) 
+	{
+		int brownoutWatts = (super.getwattageOn())-(super.getwattageOn()*0);
+		super.setonnwattage(brownoutWatts);
 	}
 	
 	public String toString()
 	{
 		String localApp;
-		localApp="Location ID" + super.locationID+"\nAppliance Name: " + super.appName+"\n ApplianceID: " + super.appID;
+		localApp="Location ID" + super.getlocationID()+"\nAppliance Name: " + super.appName()+"\n ApplianceID: " + super.getappID();
 		return localApp;
 	}
 }
