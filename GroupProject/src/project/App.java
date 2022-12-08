@@ -48,9 +48,9 @@ public class App {
 		return smart;
 	}
 	
-	public void setlocationID(int l)
+	public void setlocationID(int v)
 	{
-		locationID=l;
+		locationID=v;
 	}
 	
 	public void setappliancename(String str)
