@@ -1,6 +1,6 @@
 package project;
 
-import inClass.Car;
+//import inClass.Car;
 
 public class App {
 	private int locationID;

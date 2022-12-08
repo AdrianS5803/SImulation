@@ -33,8 +33,7 @@ class AppClient{
 			
 			/*Complete the method*/
 			//aAppl = new Appliance();
-			while (scan.hasNext())
-		      {
+			while (scan.hasNext()){
 		         // Read the next name.
 				str = scan.nextLine();
 				
@@ -45,15 +44,16 @@ class AppClient{
 				  probOn = Float.parseFloat(details[3]); 
 				  appType = details[4];
 				  if(appType.equalsIgnoreCase("TRUE")){ 
-					  lowPower = Integer.parseInt(details[5]); 
+					  lowPower = Double.parseDouble(details[5]); 
 					  aAppl = new SmartApp(locationID, appName,onPower, probOn, lowPower,Boolean.parseBoolean(appType) ); 
 					} 
 				  else{ 
 					  aAppl = new RegApp(locationID, appName, onPower, probOn,Boolean.parseBoolean(appType)); 
 				  }
-				 
-				
-		      }
+			}
+			
+			
+			
 			scan.close();
 		}catch(IOException ioe){ 
 			System.out.println("The file can not be read");
