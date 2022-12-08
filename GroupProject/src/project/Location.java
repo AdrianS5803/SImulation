@@ -5,9 +5,9 @@ public class Location{
 	private int numAppliactions;
 	private boolean brownOut; // flag to indicate brown out condition
 
-	public Location(){
-		
-		applications = new App[numAppliactions];
+	public Location(App[] getApp, int getNumApp){
+		//numAppliactions=getNumApp;
+		applications = new App[20];
 		brownOut = false;
 	}
 

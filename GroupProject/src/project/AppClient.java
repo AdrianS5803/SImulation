@@ -37,16 +37,21 @@ class AppClient{
 		      {
 		         // Read the next name.
 				str = scan.nextLine();
-				/*
-				 * String[] details = str.split(","); locationID = Integer.parseInt(details[0]);
-				 * appName = details[1]; onPower = Integer.parseInt(details[2]); probOn =
-				 * Float.parseFloat(details[3]); appType = details[4];
-				 * if(appType.equalsIgnoreCase("TRUE")){ lowPower =
-				 * Integer.parseInt(details[5]); aAppl = new SmartApp(locationID, appName,
-				 * onPower, probOn, lowPower,Boolean.parseBoolean(appType) ); } else{ aAppl =
-				 * new RegApp(locationID, appName, onPower, probOn,
-				 * Boolean.parseBoolean(appType)); }
-				 */
+				
+				  String[] details = str.split(","); 
+				  locationID = Integer.parseInt(details[0]);
+				  appName = details[1]; 
+				  onPower = Integer.parseInt(details[2]); 
+				  probOn = Float.parseFloat(details[3]); 
+				  appType = details[4];
+				  if(appType.equalsIgnoreCase("TRUE")){ 
+					  lowPower = Integer.parseInt(details[5]); 
+					  aAppl = new SmartApp(locationID, appName,onPower, probOn, lowPower,Boolean.parseBoolean(appType) ); 
+					} 
+				  else{ aAppl =
+					  new RegApp(locationID, appName, onPower, probOn,Boolean.parseBoolean(appType)); 
+				  }
+				 
 				
 		      }
 			scan.close();
@@ -197,6 +202,7 @@ class AppClient{
 					System.out.println("The file can not be read");
 					option2 = scan.nextLine();
 				}
+				app.readAppFile(option2);
 				 
 				break;
 			}else if(option1.equals("Q")) {
