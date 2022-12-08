@@ -1,22 +1,22 @@
 package project;
 
 public class App {
-  int locationID;
-	String appName;
-	int wattageOn;
-	double probStayOn;
-	boolean smart;
-	static int id = 0;
-	int appID;
+	private int locationID;
+	private String appName;
+	private int wattageOn;
+	private double probStayOn;
+	private boolean smart;
+	private static int counter = 0;
+	private int appID;
 	
 	public App ( int I, String AppName, int O, double prob, boolean t) {
-		locationID = I;
-		appName = AppName;
-		wattageOn = O;
-		probStayOn = prob;
-		smart = t;
-		id++;
-		appID = id;
+		this.locationID = I;
+		this.appName = AppName;
+		this.wattageOn = O;
+		this.probStayOn = prob;
+		this.smart = t;
+		this.appID = App.counter;
+		
 	}
 	public int getlocationID()
 	{
