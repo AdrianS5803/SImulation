@@ -25,7 +25,9 @@ public class RegApp extends App
 	public String toString()
 	{
 		String localApp;
+
 		localApp="Location ID" + super.getlocationID()+"\nAppliance Name: " + super.getAppName()+"\n ApplianceID: " + super.getappID();
+
 		return localApp;
 	}
 }
