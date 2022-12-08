@@ -68,9 +68,9 @@ public class App {
 		probStayOn=i;
 	}
 	
-	public void setapplianceID(int d)
+	public void setapplianceID(int f)
 	{
-		appID=d;
+		appID=f;
 	}
 	
 	public String toString()
