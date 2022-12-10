@@ -26,8 +26,11 @@ public class SmartApp extends App
 	{
 		String localApp;
 
-		localApp ="Location ID" + super.getlocationID()+"\n Appliance Name: " + super.getAppName()+"\n ApplianceID: " + super.getappID();
-
+		localApp ="Location ID" + super.getlocationID()+"\nAppliance Name: " + super.getAppName()
+		+"\nApplianceID: " + super.getappID()+"\nWattageON: " + super.getwattageOn()
+		+"\nIs it a Smart Appliance: " + super.getappliancetype()+"\nChance of being on: " + super.getProbStayOn()
+		+"\nranNum: " + super.getRandomNum()+"\nIs it On: " + super.isItOn();
+		//return localApp;
 		return localApp;
 	}
 }

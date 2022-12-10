@@ -10,6 +10,8 @@ public class App {
 	private boolean smart;
 	private static int counter = 0;
 	private int appID;
+	private double randomNum;
+	private boolean isItOn;
 	
 	public App ( int I, String AppName, int O, float prob, boolean t) {
 		this.locationID = I;
@@ -19,12 +21,48 @@ public class App {
 		this.smart = t;
 		this.appID = App.counter;
 		App.counter++;
+		this.randomNum=Math.random();
+		if(randomNum<=this.probStayOn) {
+			this.isItOn=true;
+		}
+		else
+			this.isItOn=false;
 		
 	}
 	
-	public App(int locationID2, String appName2, int onPower, float probOn, boolean parseBoolean, double lowPower) {
-		// TODO Auto-generated constructor stub
+	
+	/**
+	 * @return the isItOn
+	 */
+	public boolean isItOn() {
+		return isItOn;
 	}
+
+
+	/**
+	 * @param isItOn the isItOn to set
+	 */
+	public void setItOn(boolean isItOn) {
+		this.isItOn = isItOn;
+	}
+
+
+	/**
+	 * @return the randomNum
+	 */
+	public double getRandomNum() {
+		return randomNum;
+	}
+
+
+	/**
+	 * @param randomNum the randomNum to set
+	 */
+	public void setRandomNum(double randomNum) {
+		this.randomNum = randomNum;
+	}
+
+
 	public int getlocationID()
 	{
 		return locationID;
@@ -40,7 +78,7 @@ public class App {
 		return wattageOn;
 	}
 	
-	public double probStayOn(App applic)
+	public double getProbStayOn()
 	{
 		return probStayOn;
 	}
@@ -83,7 +121,8 @@ public class App {
 	public String toString()
 	{
 		String localApp;
-		localApp = "Location ID"+locationID+"\nAppliance Name: "+appName+"\nApplianceID: "+appID+"\n";
+		localApp = "Location ID: "+locationID+"\nAppliance Name: "+appName+"\nApplianceID: "+appID+"\n"+
+				"Wattage Power: "+wattageOn;
 		return localApp;
 	}
 }

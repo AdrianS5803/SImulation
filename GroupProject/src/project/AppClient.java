@@ -15,7 +15,7 @@ import java.util.Scanner;
 
 //import project.ApplianceGenerator.Appliance;
 class AppClient{
-	
+	Location loc = new Location();
 	public void readAppFile(String file){ // method to read the comma seperated appliance file.
 		Scanner scan;
 		try {
@@ -31,6 +31,7 @@ class AppClient{
 			double lowPower;
 			App aAppl;
 			
+			int index=0;
 			/*Complete the method*/
 			//aAppl = new Appliance();
 			while (scan.hasNext()){
@@ -50,11 +51,16 @@ class AppClient{
 				  else{ 
 					  aAppl = new RegApp(locationID, appName, onPower, probOn,Boolean.parseBoolean(appType)); 
 				  }
+				  loc.addApplications(aAppl, index);
+				  index++;
+				  
 			}
 			
-			
-			
 			scan.close();
+			//System.out.println(loc.getTotalWattage());
+			//while(maxPower>loc.getTotalWattage()) {
+				
+			//}
 		}catch(IOException ioe){ 
 			System.out.println("The file can not be read");
 			System.out.println("The file can not be read");
@@ -68,6 +74,7 @@ class AppClient{
 		//User interactive part
 		String option1, option2;
 		Scanner scan = new Scanner(System.in);
+		Scanner blank = new Scanner(System.in);
 		//app.readAppFile("/Users/adriansalcedo/Desktop/Comp Sci/Eclipse Workspace/GroupProject/src/project/app.txt");
 		while(true){
 			// Application menu to be displayed to the user.
@@ -203,7 +210,21 @@ class AppClient{
 					option2 = scan.nextLine();
 				}
 				app.readAppFile(option2);
-				 
+				//option1= blank.nextLine();
+				//while(app.loc.getTotalWattage()>maxPower) {
+					System.out.println("The Building has exceeded total allowed wattage");
+					System.out.println("The total allowed wattage is: "+maxPower);
+					System.out.println("The total wattage that is being used in the building: "+app.loc.getTotalWattage());
+					System.out.println("Would you like to select a smart appliance to turn to low(S) or brown out a location(B)");
+					
+				
+					option2= blank.nextLine();
+					if(option2.equals("S")) {
+						app.loc.setOnArray(app.loc.getApplications());
+					}
+					
+				//}
+				// System.out.println(app.loc.);
 				break;
 			}else if(option1.equals("Q")) {
 				break;
