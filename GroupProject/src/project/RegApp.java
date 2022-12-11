@@ -14,6 +14,7 @@ public class RegApp extends App
 	{
 		double lowvolt=(super.getwattageOn())-(super.getwattageOn()*0);
 		super.setonnwattage((int)lowvolt);
+		super.setItSetToLow(false);
 	}
 	
 	public void brownoutWatts(App application) 
@@ -26,10 +27,11 @@ public class RegApp extends App
 	{
 		String localApp;
 
-		localApp ="Location ID" + super.getlocationID()+"\nAppliance Name: " + super.getAppName()
+		localApp ="Location ID: " + super.getlocationID()+"\nAppliance Name: " + super.getAppName()
 		+"\nApplianceID: " + super.getappID()+"\nWattageON: " + super.getwattageOn()
-		+"\nIs it a Smart Appliance: " + super.getappliancetype()+"\nChance of being on: " + super.getProbStayOn()
-		+"\nranNum: " + super.getRandomNum()+"\nIs it On: " + super.isItOn();
+		+"\nIs it a Smart Appliance: " + super.getappliancetype()+"\nIs it set to on: " + super.getIsItSetToLow()
+		;
 		return localApp;
 	}
+	
 }

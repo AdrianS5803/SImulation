@@ -1,0 +1,163 @@
+Here are the appliances that were affected uring the timestep
+Location ID: 10000023
+Appliance Name: Ceiling Fan w/o light
+ApplianceID: 394
+Location ID: 10000023
+Appliance Name: Coffee Maker
+ApplianceID: 395
+Location ID: 10000023
+Appliance Name: Fish Tank (10 Gallon)
+ApplianceID: 396
+Location ID: 10000023
+Appliance Name: Television - 27 inch
+ApplianceID: 397
+Location ID: 10000023
+Appliance Name: Television 42' - 50' Projection
+ApplianceID: 398
+Location ID: 10000023
+Appliance Name: Lighting - 60 Watt
+ApplianceID: 399
+Location ID: 10000023
+Appliance Name: Air Conditioner - 10000 BTU
+ApplianceID: 400
+Location ID: 10000023
+Appliance Name: VCR
+ApplianceID: 401
+Location ID: 10000023
+Appliance Name: Television/DVD/VCR Combination
+ApplianceID: 402
+Location ID: 10000023
+Appliance Name: Lighting - Chandelier 5 - 40 Watt Bulbs
+ApplianceID: 403
+Location ID: 10000023
+Appliance Name: Television - 60 inch
+ApplianceID: 404
+Location ID: 10000023
+Appliance Name: Computer Printer (Printing)
+ApplianceID: 405
+Location ID: 10000023
+Appliance Name: Television - 25 inch
+ApplianceID: 406
+Location ID: 10000023
+Appliance Name: Refrigerator - 19 cu. ft. - Frostfree
+ApplianceID: 407
+Location ID: 10000023
+Appliance Name: Lawn Equipment - Weed Eater
+ApplianceID: 408
+Location ID: 10000023
+Appliance Name: Freezer - Upright/Chest 17 cu.ft. - Frostfree
+ApplianceID: 409
+Location ID: 10000047
+Appliance Name: Lighting - 5 rooms (10 60W)
+ApplianceID: 816
+Location ID: 10000047
+Appliance Name: Fan (Window)
+ApplianceID: 817
+Location ID: 10000047
+Appliance Name: Television - 25 inch
+ApplianceID: 818
+Location ID: 10000047
+Appliance Name: Exercise Equipment - Treadmill 3 H.P.
+ApplianceID: 819
+Location ID: 10000047
+Appliance Name: Lighting - Fluorescent 2 bulb
+ApplianceID: 820
+Location ID: 10000047
+Appliance Name: Dishwasher (With Dry Cycle)
+ApplianceID: 821
+Location ID: 10000047
+Appliance Name: Television - 43 inch
+ApplianceID: 822
+Location ID: 10000047
+Appliance Name: Lighting - Comp Fluorescent - 23 Watt
+ApplianceID: 823
+Location ID: 10000047
+Appliance Name: Video Game
+ApplianceID: 824
+Location ID: 10000047
+Appliance Name: Television - 32 inch
+ApplianceID: 825
+Location ID: 10000047
+Appliance Name: Television - 43 inch
+ApplianceID: 826
+Location ID: 10000047
+Appliance Name: Lighting - 5 rooms (10 60W)
+ApplianceID: 827
+Location ID: 10000047
+Appliance Name: Television Plasma 42' - 50'
+ApplianceID: 828
+Location ID: 10000047
+Appliance Name: Television - 27 inch
+ApplianceID: 829
+Location ID: 10000047
+Appliance Name: Dishwasher (Without Dry Cycle)
+ApplianceID: 830
+Location ID: 10000097
+Appliance Name: Television - 43 inch
+ApplianceID: 1705
+Location ID: 10000097
+Appliance Name: Television - 27 inch
+ApplianceID: 1706
+Location ID: 10000097
+Appliance Name: Freezer - Upright/Chest 17 cu.ft. - Frostfree
+ApplianceID: 1707
+Location ID: 10000097
+Appliance Name: Television 42' - 50' Projection
+ApplianceID: 1708
+Location ID: 10000097
+Appliance Name: Refrigerator - 14 cu. ft.
+ApplianceID: 1709
+Location ID: 10000097
+Appliance Name: Video Game
+ApplianceID: 1710
+Location ID: 10000097
+Appliance Name: Air Conditioner - 5000 BTU
+ApplianceID: 1711
+Location ID: 10000097
+Appliance Name: Air Conditioner - 7000 BTU
+ApplianceID: 1712
+Location ID: 10000097
+Appliance Name: Lighting - 10 rooms (15 60W)
+ApplianceID: 1713
+Location ID: 10000097
+Appliance Name: Clothes Dryer - Electric
+ApplianceID: 1714
+Location ID: 10000097
+Appliance Name: Bug Killer
+ApplianceID: 1715
+Location ID: 10000097
+Appliance Name: Fan (Attic)
+ApplianceID: 1716
+Location ID: 10000097
+Appliance Name: Iron
+ApplianceID: 1717
+Location ID: 10000097
+Appliance Name: Lighting - 100 Watt
+ApplianceID: 1718
+Location ID: 10000097
+Appliance Name: Lighting - 75 Watt
+ApplianceID: 1719
+Location ID: 10000097
+Appliance Name: Answering Machine
+ApplianceID: 1720
+Location ID: 10000097
+Appliance Name: VCR
+ApplianceID: 1721
+Location ID: 10000097
+Appliance Name: Lawn Mower
+ApplianceID: 1722
+Location ID: 10000097
+Appliance Name: Lighting - 5 rooms (10 60W)
+ApplianceID: 1723
+Location ID: 10000097
+Appliance Name: Lighting - 7 rooms (12 60W)
+ApplianceID: 1724
+Location ID: 111
+Appliance Name: qwe
+ApplianceID: 1773
+Location ID: 111
+Appliance Name: shefbk
+ApplianceID: 1774
+Location ID: 111
+Appliance Name: bkhes
+ApplianceID: 1775

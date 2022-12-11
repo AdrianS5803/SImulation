@@ -87,7 +87,7 @@ class AppClient{
 			System.out.println("Type \"Q\" Quit the program");
 			
 			option1=scan.nextLine();
-			System.out.println(option1);
+			//System.out.println(option1);
 			
 			//System.out.println(option1);
 			/* Complete the skeleton code below */
@@ -195,6 +195,11 @@ class AppClient{
 				System.out.println("Enter the total allowed wattage (power)");
 				int maxPower;
 				maxPower= scan.nextInt();
+				
+				System.out.println("Enter the timesteps for this simulation");
+				int timeStep;
+				timeStep= scan.nextInt();
+				
 				System.out.println("Enter the comma separated text file containing the appliances.");
 				option2= scan.nextLine();
 				while(true) {
@@ -209,21 +214,50 @@ class AppClient{
 					System.out.println("The file can not be read");
 					option2 = scan.nextLine();
 				}
-				app.readAppFile(option2);
-				//option1= blank.nextLine();
-				//while(app.loc.getTotalWattage()>maxPower) {
-					System.out.println("The Building has exceeded total allowed wattage");
-					System.out.println("The total allowed wattage is: "+maxPower);
-					System.out.println("The total wattage that is being used in the building: "+app.loc.getTotalWattage());
-					System.out.println("Would you like to select a smart appliance to turn to low(S) or brown out a location(B)");
-					
+				String file = option2;
 				
-					option2= blank.nextLine();
-					if(option2.equals("S")) {
-						app.loc.setOnArray(app.loc.getApplications());
-					}
+				for(int i =0;i<timeStep;i++) {
+					System.out.println("This is timestep number "+(i+1)+" of the simulation");
+					app.readAppFile(file);
+					//option1= blank.nextLine();
+					while(app.loc.getTotalWattage()>maxPower) {
+						System.out.println("The Building has exceeded total allowed wattage");
+						System.out.println("The total allowed wattage is: "+maxPower);
+						System.out.println("The total wattage that is being used in the building: "+app.loc.getTotalWattage());
+						System.out.println("Would you like to select a smart appliance to turn to low(S) or brown out a location(B)");
+						
 					
-				//}
+						option2= blank.nextLine();
+						if(option2.equals("S")) {
+							System.out.println("Here are the ten appliances using the most power");
+							app.loc.setOnArray();
+							System.out.println("Select which application you would like to set to low. Type AppID");
+							option2= blank.nextLine();
+							app.loc.setLow(app.loc.getApplications(),Integer.parseInt(option2));
+							//System.out.println(app.loc.getApplication(Integer.parseInt(option2)));
+						}
+						else if(option2.equals("B")) {
+							app.loc.showLocations();
+							System.out.println("What location would you like to brown out. Type LocationID");
+							option2= blank.nextLine();
+							app.loc.brownOutLocation(Integer.parseInt(option2));
+							//System.out.println(app.loc.getTotalWattage());
+						}
+						
+					}
+					System.out.println(app.loc.getTotalTurnedBrownOut());
+					System.out.println(app.loc.getTotalTurnedOff());
+					System.out.println("You have gotten the total wattage used in the building lower than the total allowed wattage congrats!");
+					app.loc.maxEffectedLocation();
+					app.loc.numEffectedLocation();
+					app.loc.textFile();
+					//app
+					
+
+					//app.loc.get;
+				}
+				
+				
 				// System.out.println(app.loc.);
 				break;
 			}else if(option1.equals("Q")) {

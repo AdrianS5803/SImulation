@@ -11,7 +11,10 @@ public class App {
 	private static int counter = 0;
 	private int appID;
 	private double randomNum;
+	private double percentDrop;
 	private boolean isItOn;
+	private boolean isItSetToOn;
+	private boolean effected;
 	
 	public App ( int I, String AppName, int O, float prob, boolean t) {
 		this.locationID = I;
@@ -22,15 +25,68 @@ public class App {
 		this.appID = App.counter;
 		App.counter++;
 		this.randomNum=Math.random();
+		this.isItSetToOn=true;
+		this.effected=false;
 		if(randomNum<=this.probStayOn) {
 			this.isItOn=true;
+			
 		}
-		else
+		else {
 			this.isItOn=false;
+		//this.isItSetToOn=false;
+		}
 		
 	}
 	
 	
+	/**
+	 * @return the effected
+	 */
+	public boolean isEffected() {
+		return effected;
+	}
+
+
+	/**
+	 * @param effected the effected to set
+	 */
+	public void setEffected(boolean effected) {
+		this.effected = effected;
+	}
+
+
+	/**
+	 * @return the isItSetToLow
+	 */
+	public boolean getIsItSetToLow() {
+		return isItSetToOn;
+	}
+
+
+	/**
+	 * @param isItSetToLow the isItSetToLow to set
+	 */
+	public void setItSetToLow(boolean isItSetToLow) {
+		this.isItSetToOn = isItSetToLow;
+	}
+
+
+	/**
+	 * @return the percentDrop
+	 */
+	public double getPercentDrop() {
+		return percentDrop;
+	}
+
+
+	/**
+	 * @param percentDrop the percentDrop to set
+	 */
+	public void setPercentDrop(double percentDrop) {
+		this.percentDrop = percentDrop;
+	}
+
+
 	/**
 	 * @return the isItOn
 	 */
@@ -95,34 +151,46 @@ public class App {
 	
 	public void setlocationID(int v)
 	{
-		locationID=v;
+		this.locationID=v;
 	}
 	
 	public void setappliancename(String str)
 	{
-		appName=str;
+		this.appName=str;
 	}
 	
 	public void setonnwattage(int x)
 	{
-		wattageOn=x;
+		this.wattageOn=x;
 	}
 	
 	public void setonoffprob(float i)
 	{
-		probStayOn=i;
+		this.probStayOn=i;
 	}
 	
 	public void setapplianceID(int f)
 	{
-		appID=f;
+		this.appID=f;
 	}
-	
+	public void lowvoltage()
+	{
+		setItSetToLow(true);
+		double lowvolt=(getwattageOn())-(getwattageOn()*percentDrop);
+		setonnwattage((int)lowvolt);
+		
+	}
 	public String toString()
 	{
 		String localApp;
 		localApp = "Location ID: "+locationID+"\nAppliance Name: "+appName+"\nApplianceID: "+appID+"\n"+
 				"Wattage Power: "+wattageOn;
+		return localApp;
+	}
+	public String fileToString()
+	{
+		String localApp;
+		localApp = "Location ID: "+locationID+"\nAppliance Name: "+appName+"\nApplianceID: "+appID+"\n";
 		return localApp;
 	}
 }

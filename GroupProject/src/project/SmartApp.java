@@ -8,12 +8,15 @@ public class SmartApp extends App
 	{
 		super(I,appName,O,prob,t);
 		percentDrop=drop;
+		super.setPercentDrop(percentDrop);
+		
 	}
 	
 	public void lowvoltage()
 	{
 		double lowvolt=(super.getwattageOn())-(super.getwattageOn()*percentDrop);
 		super.setonnwattage((int)lowvolt);
+		super.setItSetToLow(false);
 	}
 	
 	public void brownoutWatts(App application) 
@@ -26,11 +29,10 @@ public class SmartApp extends App
 	{
 		String localApp;
 
-		localApp ="Location ID" + super.getlocationID()+"\nAppliance Name: " + super.getAppName()
-		+"\nApplianceID: " + super.getappID()+"\nWattageON: " + super.getwattageOn()
-		+"\nIs it a Smart Appliance: " + super.getappliancetype()+"\nChance of being on: " + super.getProbStayOn()
-		+"\nranNum: " + super.getRandomNum()+"\nIs it On: " + super.isItOn();
-		//return localApp;
+		localApp ="Location ID: " + super.getlocationID()+"\nAppliance Name: " + super.getAppName()
+		+"\nApplianceID: " + super.getappID()+"\nWattageON: " + super.getwattageOn()+"\n"
+		;//return localApp;
 		return localApp;
 	}
+	
 }
