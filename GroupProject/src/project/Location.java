@@ -76,9 +76,10 @@ public class Location {
 			if (applications[i].getlocationID() == location) {
 				applications[i].setonnwattage(0);
 				applications[i].setEffected(true);
-				totalTurnedBrownOut++;
+				
 			}
 		}
+		totalTurnedBrownOut++;
 
 	}
 	public void showLocations() {
@@ -206,7 +207,7 @@ public class Location {
             oneTempApp[max_idx] = oneTempApp[i];
             oneTempApp[i] = temp;
         }
-		for(int i = 0; i <5; i++) {
+		for(int i = 0; i <10; i++) {
 			if (oneTempApp[i] == null) {
 				break;
 			}

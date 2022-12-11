@@ -62,12 +62,39 @@ class AppClient{
 				
 			//}
 		}catch(IOException ioe){ 
-			System.out.println("The file can not be read");
-			System.out.println("The file can not be read");
+		System.out.println("The file can not be read");
+			//System.out.println("The file can not be read");
 		}
 	}
 	
-	
+	public void printAppFile(String file){ // method to read the comma seperated appliance file.
+		Scanner scan;
+		try {
+			File myFile=new File(file);
+			scan=new Scanner(myFile);//each line has the format
+			//locationID,name of app,onPower,probability of staying on, smart or not,Smart appliances (if "on") power reduction percent when changed to "low" status(floating point, i.e..33=33%).
+			String str;
+			
+			/*Complete the method*/
+			//aAppl = new Appliance();
+			while (scan.hasNext()){
+		         // Read the next name.
+				str = scan.nextLine();
+				
+				  
+				  System.out.println(str);
+			}
+			
+			scan.close();
+			//System.out.println(loc.getTotalWattage());
+			//while(maxPower>loc.getTotalWattage()) {
+				
+			//}
+		}catch(IOException ioe){ 
+		System.out.println("The file can not be read");
+			//System.out.println("The file can not be read");
+		}
+	}
 	public static void main(String []args){
 		
 		AppClient app = new AppClient();
@@ -109,7 +136,7 @@ class AppClient{
 				System.out.println("Enter the probability of the application staying on");
 				input = scan.nextLine();
 				newAppliance+=input+",";
-				System.out.println("Is it a smart appliance?");
+				System.out.println("Is it a smart appliance?(Enter yes or no)");
 				input=scan.nextLine();
 				//newAppliance+=input+",";
 				if(input.equals("yes")) {
@@ -182,7 +209,7 @@ class AppClient{
 			
 			
 			else if(option1.equals("L")) {
-				app.readAppFile("/Users/adriansalcedo/git/SImulation/GroupProject/src/project/app.txt");
+				app.printAppFile("/Users/adriansalcedo/git/SImulation/GroupProject/src/project/app.txt");
 				
 			}else if(option1.equals("F")) {
 				System.out.println("Enter file you would like to read");
@@ -201,7 +228,7 @@ class AppClient{
 				timeStep= scan.nextInt();
 				
 				System.out.println("Enter the comma separated text file containing the appliances.");
-				option2= scan.nextLine();
+				option2= blank.nextLine();
 				while(true) {
 					try {
 						File myFile=new File(option2);
@@ -209,9 +236,9 @@ class AppClient{
 						break;
 					}
 					catch(IOException ioe){ 
-						
+						//System.out.println("The file can not be read");
 					}
-					System.out.println("The file can not be read");
+					
 					option2 = scan.nextLine();
 				}
 				String file = option2;
@@ -237,6 +264,8 @@ class AppClient{
 							//System.out.println(app.loc.getApplication(Integer.parseInt(option2)));
 						}
 						else if(option2.equals("B")) {
+							
+							System.out.println("Here are the locations that you can black out");
 							app.loc.showLocations();
 							System.out.println("What location would you like to brown out. Type LocationID");
 							option2= blank.nextLine();
@@ -245,22 +274,28 @@ class AppClient{
 						}
 						
 					}
-					System.out.println(app.loc.getTotalTurnedBrownOut());
-					System.out.println(app.loc.getTotalTurnedOff());
 					System.out.println("You have gotten the total wattage used in the building lower than the total allowed wattage congrats!");
-					app.loc.maxEffectedLocation();
+
+					System.out.println("The number of smart appliances that turned to low are "+app.loc.getTotalTurnedOff());
+					System.out.println("The number of locations that has browned out is "+app.loc.getTotalTurnedBrownOut());
+					
 					app.loc.numEffectedLocation();
+					System.out.print("Location that got effected the most: ");
+					app.loc.maxEffectedLocation();
+					System.out.println("Go to detailFile.txt to see the appliances/locations were affected");
 					app.loc.textFile();
+					System.out.println();
 					//app
 					
 
 					//app.loc.get;
 				}
 				
-				
+				System.out.println("Simulation complete");
 				// System.out.println(app.loc.);
 				break;
 			}else if(option1.equals("Q")) {
+				System.out.println("You have exited the program");
 				break;
 			}
 			else{
