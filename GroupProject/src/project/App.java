@@ -55,19 +55,21 @@ public class App {
 	}
 
 
+	
+
 	/**
-	 * @return the isItSetToLow
+	 * @return the isItSetToOn
 	 */
-	public boolean getIsItSetToLow() {
+	public boolean isItSetToOn() {
 		return isItSetToOn;
 	}
 
 
 	/**
-	 * @param isItSetToLow the isItSetToLow to set
+	 * @param isItSetToOn the isItSetToOn to set
 	 */
-	public void setItSetToLow(boolean isItSetToLow) {
-		this.isItSetToOn = isItSetToLow;
+	public void setItSetToOn(boolean isItSetToOn) {
+		this.isItSetToOn = isItSetToOn;
 	}
 
 
@@ -175,7 +177,7 @@ public class App {
 	}
 	public void lowvoltage()
 	{
-		setItSetToLow(true);
+		setItSetToOn(false);
 		double lowvolt=(getwattageOn())-(getwattageOn()*percentDrop);
 		setonnwattage((int)lowvolt);
 		

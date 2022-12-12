@@ -8,7 +8,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 //import project.ApplianceGenerator.Appliance;
@@ -169,8 +168,9 @@ class AppClient{
 			
 			else if(option1.equals("D")) {
 				System.out.println("Select what appliance you would like to delete");
-				
+				//IF OTHER USER WANTS TO USE IT CHANGE THE FILE THAT FITS FOR UR DEVICE
 				String tempFile = "/Users/adriansalcedo/git/SImulation/GroupProject/src/project/temp.txt";
+				//IF OTHER USER WANTS TO USE IT CHANGE THE FILE THAT FITS FOR UR DEVICE
 				File oldFile = new File ("/Users/adriansalcedo/git/SImulation/GroupProject/src/project/app.txt");
 				File newFile = new File (tempFile);
 				int line = 0;
@@ -181,6 +181,7 @@ class AppClient{
 				FileWriter fw = new FileWriter (tempFile, true);
 				BufferedWriter bw = new BufferedWriter (fw);
 				PrintWriter pw = new PrintWriter (bw);
+				//IF OTHER USER WANTS TO USE IT CHANGE THE FILE THAT FITS FOR UR DEVICE
 				FileReader fr = new FileReader ("/Users/adriansalcedo/git/SImulation/GroupProject/src/project/app.txt");
 				BufferedReader br = new BufferedReader (fr);
 					while ((currentLine = br.readLine()) != null){
@@ -196,6 +197,7 @@ class AppClient{
 					bw.close();
 					fw.close();
 					oldFile.delete();
+					//IF OTHER USER WANTS TO USE IT CHANGE THE FILE THAT FITS FOR UR DEVICE
 					File dump = new File ("/Users/adriansalcedo/git/SImulation/GroupProject/src/project/app.txt");
 					newFile.renameTo (dump);
 				}
@@ -209,6 +211,7 @@ class AppClient{
 			
 			
 			else if(option1.equals("L")) {
+				//IF OTHER USER WANTS TO USE IT CHANGE THE FILE THAT FITS FOR UR DEVICE
 				app.printAppFile("/Users/adriansalcedo/git/SImulation/GroupProject/src/project/app.txt");
 				
 			}else if(option1.equals("F")) {
@@ -219,6 +222,7 @@ class AppClient{
 			}
 			
 			else if(option1.equals("S")) {
+				
 				System.out.println("Enter the total allowed wattage (power)");
 				int maxPower;
 				maxPower= scan.nextInt();
@@ -244,6 +248,8 @@ class AppClient{
 				String file = option2;
 				
 				for(int i =0;i<timeStep;i++) {
+					app.loc.setTotalTurnedBrownOut(0);
+					app.loc.setTotalTurnedOff(0);
 					System.out.println("This is timestep number "+(i+1)+" of the simulation");
 					app.readAppFile(file);
 					//option1= blank.nextLine();
@@ -260,7 +266,7 @@ class AppClient{
 							app.loc.setOnArray();
 							System.out.println("Select which application you would like to set to low. Type AppID");
 							option2= blank.nextLine();
-							app.loc.setLow(app.loc.getApplications(),Integer.parseInt(option2));
+							app.loc.setLow(Integer.parseInt(option2));
 							//System.out.println(app.loc.getApplication(Integer.parseInt(option2)));
 						}
 						else if(option2.equals("B")) {
@@ -275,13 +281,15 @@ class AppClient{
 						
 					}
 					System.out.println("You have gotten the total wattage used in the building lower than the total allowed wattage congrats!");
-
 					System.out.println("The number of smart appliances that turned to low are "+app.loc.getTotalTurnedOff());
 					System.out.println("The number of locations that has browned out is "+app.loc.getTotalTurnedBrownOut());
 					
-					app.loc.numEffectedLocation();
+					
+					System.out.println("Num location effected: "+app.loc.numEffectedLocation());
+				if(app.loc.numEffectedLocation()!=0) {
 					System.out.print("Location that got effected the most: ");
 					app.loc.maxEffectedLocation();
+				}
 					System.out.println("Go to detailFile.txt to see the appliances/locations were affected");
 					app.loc.textFile();
 					System.out.println();

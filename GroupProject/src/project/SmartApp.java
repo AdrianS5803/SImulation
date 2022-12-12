@@ -12,18 +12,9 @@ public class SmartApp extends App
 		
 	}
 	
-	public void lowvoltage()
-	{
-		double lowvolt=(super.getwattageOn())-(super.getwattageOn()*percentDrop);
-		super.setonnwattage((int)lowvolt);
-		super.setItSetToLow(false);
-	}
 	
-	public void brownoutWatts(App application) 
-	{
-		int brownoutWatts = (super.getwattageOn())-(super.getwattageOn()*0);
-		super.setonnwattage(brownoutWatts);
-	}
+	
+	
 	
 	public String toString()
 	{

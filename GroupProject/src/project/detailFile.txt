@@ -1,473 +1,537 @@
-Here are the appliances that were affected uring the timestep
-Location ID: 10000016
+Here are the appliances that were affected during the timestep
+Location ID: 10000011
+Appliance Name: Air Conditioner - 5000 BTU
+ApplianceID: 1876
+
+Location ID: 10000011
 Appliance Name: Iron
-ApplianceID: 1982
+ApplianceID: 1877
+
+Location ID: 10000011
+Appliance Name: Freezer - Upright/Chest 17 cu. ft
+ApplianceID: 1878
+
+Location ID: 10000011
+Appliance Name: Lawn Mower
+ApplianceID: 1879
+
+Location ID: 10000011
+Appliance Name: Microwave Oven
+ApplianceID: 1880
+
+Location ID: 10000011
+Appliance Name: Refrigerator - 17 cu. ft - Frostfree
+ApplianceID: 1881
+
+Location ID: 10000011
+Appliance Name: Lighting - Halogen
+ApplianceID: 1882
+
+Location ID: 10000011
+Appliance Name: Refrigerator - 17 cu. ft - Frostfree
+ApplianceID: 1883
+
+Location ID: 10000011
+Appliance Name: Air Conditioner - 5000 BTU
+ApplianceID: 1884
+
+Location ID: 10000011
+Appliance Name: Toaster
+ApplianceID: 1885
+
+Location ID: 10000011
+Appliance Name: Ceiling Fan w/o light
+ApplianceID: 1886
+
+Location ID: 10000011
+Appliance Name: Television - 43 inch
+ApplianceID: 1887
+
+Location ID: 10000011
+Appliance Name: Dishwasher (With Dry Cycle)
+ApplianceID: 1888
+
+Location ID: 10000011
+Appliance Name: Freezer - Upright/Chest 17 cu. ft
+ApplianceID: 1889
+
+Location ID: 10000011
+Appliance Name: Range - Small Surface Unit
+ApplianceID: 1890
+
+Location ID: 10000011
+Appliance Name: Lighting - Fluorescent 2 bulb
+ApplianceID: 1891
+
+Location ID: 10000011
+Appliance Name: Freezer - Upright/Chest 17 cu. ft
+ApplianceID: 1892
 
 Location ID: 10000016
-Appliance Name: Television - 55 inch
-ApplianceID: 1983
+Appliance Name: Lighting - Comp Fluorescent - 18 Watt
+ApplianceID: 1963
 
 Location ID: 10000016
-Appliance Name: Exercise Equipment - Treadmill 2 H.P.
-ApplianceID: 1984
+Appliance Name: Lighting - 60 Watt
+ApplianceID: 1964
 
 Location ID: 10000016
-Appliance Name: DVD
-ApplianceID: 1985
-
-Location ID: 10000016
-Appliance Name: Refrigerator - 21 cu.ft. - Frostfree
-ApplianceID: 1986
-
-Location ID: 10000016
-Appliance Name: Toaster Oven
-ApplianceID: 1987
-
-Location ID: 10000016
-Appliance Name: Television - 36 inch
-ApplianceID: 1988
-
-Location ID: 10000016
-Appliance Name: Lawn Equipment - Weed Eater
-ApplianceID: 1989
-
-Location ID: 10000016
-Appliance Name: Television 42' - 50' Projection
-ApplianceID: 1990
+Appliance Name: Clothes Washer
+ApplianceID: 1965
 
 Location ID: 10000016
 Appliance Name: Air Purifier
-ApplianceID: 1991
+ApplianceID: 1966
 
 Location ID: 10000016
-Appliance Name: Refrigerator - 19 cu. ft. - Frostfree
-ApplianceID: 1992
+Appliance Name: Air Purifier
+ApplianceID: 1967
+
+Location ID: 10000016
+Appliance Name: Television - 27 inch
+ApplianceID: 1968
 
 Location ID: 10000016
 Appliance Name: Lighting - Chandelier 5 - 40 Watt Bulbs
-ApplianceID: 1993
+ApplianceID: 1969
 
 Location ID: 10000016
-Appliance Name: Freezer - Upright/Chest 17 cu. ft
-ApplianceID: 1994
+Appliance Name: Hair Dryer (Hand Held)
+ApplianceID: 1970
 
 Location ID: 10000016
-Appliance Name: Lighting - 100 Watt
-ApplianceID: 1995
+Appliance Name: Electric Frying Pan
+ApplianceID: 1971
 
 Location ID: 10000016
-Appliance Name: Television Plasma 42' - 50'
-ApplianceID: 1996
+Appliance Name: Coffee Maker
+ApplianceID: 1972
 
 Location ID: 10000016
-Appliance Name: Stereo
-ApplianceID: 1997
+Appliance Name: Telephone - Cordless
+ApplianceID: 1973
+
+Location ID: 10000016
+Appliance Name: Oven
+ApplianceID: 1974
 
 Location ID: 10000016
 Appliance Name: Television - 27 inch
-ApplianceID: 1998
+ApplianceID: 1975
 
 Location ID: 10000016
-Appliance Name: Refrigerator - 14 cu. ft.
-ApplianceID: 1999
+Appliance Name: Lighting - 10 rooms (15 60W)
+ApplianceID: 1976
 
 Location ID: 10000016
-Appliance Name: Refrigerator - 14 cu. ft. - Frostfree
-ApplianceID: 2000
-
-Location ID: 10000016
-Appliance Name: Exercise Equipment - Treadmill 3 H.P.
-ApplianceID: 2001
+Appliance Name: Freezer - Upright/Chest 17 cu.ft. - Frostfree
+ApplianceID: 1977
 
 Location ID: 10000019
-Appliance Name: Television - 32 inch
-ApplianceID: 2034
+Appliance Name: Bug Killer
+ApplianceID: 2011
+
+Location ID: 10000019
+Appliance Name: Air Conditioner - 10000 BTU
+ApplianceID: 2012
+
+Location ID: 10000019
+Appliance Name: Clothes Dryer - Electric
+ApplianceID: 2013
+
+Location ID: 10000019
+Appliance Name: Dishwasher (Without Dry Cycle)
+ApplianceID: 2014
+
+Location ID: 10000019
+Appliance Name: Air Conditioner - 10000 BTU
+ApplianceID: 2015
+
+Location ID: 10000019
+Appliance Name: Television - 36 inch
+ApplianceID: 2016
+
+Location ID: 10000019
+Appliance Name: Range - Small Surface Unit
+ApplianceID: 2017
+
+Location ID: 10000019
+Appliance Name: Range - Large Surface Unit
+ApplianceID: 2018
+
+Location ID: 10000019
+Appliance Name: Fish Tank (50 Gallon)
+ApplianceID: 2019
 
 Location ID: 10000019
 Appliance Name: Lighting - 75 Watt
-ApplianceID: 2035
+ApplianceID: 2020
 
 Location ID: 10000019
-Appliance Name: Lighting - 5 rooms (10 60W)
-ApplianceID: 2036
+Appliance Name: Toaster
+ApplianceID: 2021
 
 Location ID: 10000019
-Appliance Name: Lighting - Comp Fluorescent - 23 Watt
-ApplianceID: 2037
+Appliance Name: Refrigerator - 14 cu. ft.
+ApplianceID: 2022
 
 Location ID: 10000019
-Appliance Name: Refrigerator - 17 cu. ft - Frostfree
-ApplianceID: 2038
+Appliance Name: Television - 32 inch
+ApplianceID: 2023
 
 Location ID: 10000019
-Appliance Name: Air Conditioner - 5000 BTU
-ApplianceID: 2039
+Appliance Name: Fish Tank (10 Gallon)
+ApplianceID: 2024
 
 Location ID: 10000019
-Appliance Name: Television - 25 inch
-ApplianceID: 2040
-
-Location ID: 10000019
-Appliance Name: Ceiling Fan with 3 - 60 Watt Bulbs
-ApplianceID: 2041
-
-Location ID: 10000019
-Appliance Name: Air Purifier
-ApplianceID: 2042
+Appliance Name: Fax Machine
+ApplianceID: 2025
 
 Location ID: 10000019
 Appliance Name: Video Game
+ApplianceID: 2026
+
+Location ID: 10000019
+Appliance Name: DVD
+ApplianceID: 2027
+
+Location ID: 10000019
+Appliance Name: Lighting - 10 rooms (15 60W)
+ApplianceID: 2028
+
+Location ID: 10000019
+Appliance Name: Lighting - 3 rooms (8 60W)
+ApplianceID: 2029
+
+Location ID: 10000020
+Appliance Name: Fan
+ApplianceID: 2030
+
+Location ID: 10000020
+Appliance Name: Refrigerator - 21 cu.ft. - Frostfree
+ApplianceID: 2031
+
+Location ID: 10000020
+Appliance Name: Telephone - Cordless
+ApplianceID: 2032
+
+Location ID: 10000020
+Appliance Name: Refrigerator - Freezer 25 cu. ft. - Side by Side
+ApplianceID: 2033
+
+Location ID: 10000020
+Appliance Name: Laptop
+ApplianceID: 2034
+
+Location ID: 10000020
+Appliance Name: Lighting - Halogen
+ApplianceID: 2035
+
+Location ID: 10000020
+Appliance Name: Oven
+ApplianceID: 2036
+
+Location ID: 10000020
+Appliance Name: Refrigerator - 1.7 cu. ft.
+ApplianceID: 2037
+
+Location ID: 10000020
+Appliance Name: Air Purifier
+ApplianceID: 2038
+
+Location ID: 10000020
+Appliance Name: Clock - Electric
+ApplianceID: 2039
+
+Location ID: 10000020
+Appliance Name: Exercise Equipment - Treadmill 3 H.P.
+ApplianceID: 2040
+
+Location ID: 10000020
+Appliance Name: Microwave Oven
+ApplianceID: 2041
+
+Location ID: 10000020
+Appliance Name: Refrigerator - Freezer 25 cu. ft. - Side by Side
+ApplianceID: 2042
+
+Location ID: 10000020
+Appliance Name: Lawn Equipment - Hedge Trimmer
 ApplianceID: 2043
 
-Location ID: 10000019
-Appliance Name: Lighting - 60 Watt
+Location ID: 10000020
+Appliance Name: Clock - Electric
 ApplianceID: 2044
 
-Location ID: 10000019
-Appliance Name: Lawn Equipment - Hedge Trimmer
-ApplianceID: 2045
+Location ID: 10000022
+Appliance Name: Exercise Equipment - Treadmill 2 H.P.
+ApplianceID: 2065
 
-Location ID: 10000019
-Appliance Name: Refrigerator - 19 cu. ft. - Frostfree
-ApplianceID: 2046
+Location ID: 10000022
+Appliance Name: Slow Cooker
+ApplianceID: 2066
 
-Location ID: 10000019
-Appliance Name: Refrigerator - Freezer 21 cu. ft.- Side by Side
-ApplianceID: 2047
+Location ID: 10000022
+Appliance Name: Fan (Window)
+ApplianceID: 2067
 
-Location ID: 10000019
-Appliance Name: Television - 13 inch
-ApplianceID: 2048
-
-Location ID: 10000019
-Appliance Name: Ceiling Fan with 3 - 60 Watt Bulbs
-ApplianceID: 2049
-
-Location ID: 10000019
-Appliance Name: Television - 25 inch
-ApplianceID: 2050
-
-Location ID: 10000019
+Location ID: 10000022
 Appliance Name: Bug Killer
-ApplianceID: 2051
+ApplianceID: 2068
 
-Location ID: 10000025
-Appliance Name: Refrigerator - 14 cu. ft.
-ApplianceID: 2135
+Location ID: 10000022
+Appliance Name: Telephone - Cordless
+ApplianceID: 2069
 
-Location ID: 10000025
-Appliance Name: Dishwasher (With Dry Cycle)
-ApplianceID: 2136
+Location ID: 10000022
+Appliance Name: Exercise Equipment - Treadmill 3 H.P.
+ApplianceID: 2070
 
-Location ID: 10000025
-Appliance Name: Clothes Washer
-ApplianceID: 2137
+Location ID: 10000022
+Appliance Name: Fan (Window)
+ApplianceID: 2071
 
-Location ID: 10000025
-Appliance Name: Air Conditioner - 5000 BTU
-ApplianceID: 2138
+Location ID: 10000022
+Appliance Name: Lighting - Chandelier 5 - 40 Watt Bulbs
+ApplianceID: 2072
 
-Location ID: 10000025
-Appliance Name: Dishwasher (Without Dry Cycle)
-ApplianceID: 2139
+Location ID: 10000022
+Appliance Name: Computer with Monitor
+ApplianceID: 2073
 
-Location ID: 10000025
-Appliance Name: Compactor (Trash)
-ApplianceID: 2140
+Location ID: 10000022
+Appliance Name: Television - 60 inch
+ApplianceID: 2074
 
-Location ID: 10000025
-Appliance Name: Ceiling Fan with 3 - 60 Watt Bulbs
-ApplianceID: 2141
+Location ID: 10000022
+Appliance Name: Television - 13 inch
+ApplianceID: 2075
 
-Location ID: 10000025
-Appliance Name: Lighting - 10 rooms (15 60W)
-ApplianceID: 2142
+Location ID: 10000022
+Appliance Name: Lawn Equipment - Weed Eater
+ApplianceID: 2076
 
-Location ID: 10000025
-Appliance Name: Microwave Oven
-ApplianceID: 2143
-
-Location ID: 10000025
-Appliance Name: DVD
-ApplianceID: 2144
-
-Location ID: 10000025
-Appliance Name: Answering Machine
-ApplianceID: 2145
-
-Location ID: 10000025
-Appliance Name: Lighting - 40 Watt
-ApplianceID: 2146
-
-Location ID: 10000025
-Appliance Name: DVD
-ApplianceID: 2147
-
-Location ID: 10000025
-Appliance Name: Lighting - 10 rooms (15 60W)
-ApplianceID: 2148
-
-Location ID: 10000025
-Appliance Name: Hair Dryer (Hand Held)
-ApplianceID: 2149
-
-Location ID: 10000025
-Appliance Name: Refrigerator - Freezer 24 cu. ft. - Frostfree
-ApplianceID: 2150
-
-Location ID: 10000025
-Appliance Name: Lighting - 60 Watt
-ApplianceID: 2151
-
-Location ID: 10000025
-Appliance Name: Fax Machine
-ApplianceID: 2152
-
-Location ID: 10000025
-Appliance Name: Clock - Electric
-ApplianceID: 2153
-
-Location ID: 10000025
-Appliance Name: Television - 43 inch
-ApplianceID: 2154
-
-Location ID: 10000029
+Location ID: 10000022
 Appliance Name: Clothes Dryer - Electric
-ApplianceID: 2201
+ApplianceID: 2077
 
-Location ID: 10000029
+Location ID: 10000022
+Appliance Name: Microwave Oven
+ApplianceID: 2078
+
+Location ID: 10000022
+Appliance Name: Freezer - Upright/Chest 17 cu.ft. - Frostfree
+ApplianceID: 2079
+
+Location ID: 10000022
+Appliance Name: Lighting - Halogen
+ApplianceID: 2080
+
+Location ID: 10000022
+Appliance Name: Refrigerator - Freezer 24 cu. ft. - Frostfree
+ApplianceID: 2081
+
+Location ID: 10000022
+Appliance Name: Television - 19 inch
+ApplianceID: 2082
+
+Location ID: 10000022
+Appliance Name: Refrigerator - 19 cu. ft. - Frostfree
+ApplianceID: 2083
+
+Location ID: 10000023
+Appliance Name: Clothes Dryer - Electric
+ApplianceID: 2084
+
+Location ID: 10000023
+Appliance Name: Bug Killer
+ApplianceID: 2085
+
+Location ID: 10000023
+Appliance Name: Dishwasher (With Dry Cycle)
+ApplianceID: 2086
+
+Location ID: 10000023
+Appliance Name: Fax Machine
+ApplianceID: 2087
+
+Location ID: 10000023
+Appliance Name: Lighting - 100 Watt
+ApplianceID: 2088
+
+Location ID: 10000023
+Appliance Name: Refrigerator - Freezer 21 cu. ft.- Side by Side
+ApplianceID: 2089
+
+Location ID: 10000023
+Appliance Name: Refrigerator - Freezer 24 cu. ft. - Frostfree
+ApplianceID: 2090
+
+Location ID: 10000023
 Appliance Name: Television - 43 inch
-ApplianceID: 2202
+ApplianceID: 2091
 
-Location ID: 10000029
+Location ID: 10000023
+Appliance Name: Clothes Dryer - Electric
+ApplianceID: 2092
+
+Location ID: 10000023
+Appliance Name: Compactor (Trash)
+ApplianceID: 2093
+
+Location ID: 10000023
+Appliance Name: VCR
+ApplianceID: 2094
+
+Location ID: 10000023
+Appliance Name: Refrigerator - 21 cu.ft. - Frostfree
+ApplianceID: 2095
+
+Location ID: 10000023
+Appliance Name: Lighting - Chandelier 5 - 40 Watt Bulbs
+ApplianceID: 2096
+
+Location ID: 10000023
+Appliance Name: Air Conditioner - 7000 BTU
+ApplianceID: 2097
+
+Location ID: 10000023
+Appliance Name: Lighting - 3 rooms (8 60W)
+ApplianceID: 2098
+
+Location ID: 10000023
 Appliance Name: Oven
-ApplianceID: 2203
+ApplianceID: 2099
 
-Location ID: 10000029
-Appliance Name: Fan
-ApplianceID: 2204
+Location ID: 10000023
+Appliance Name: Hair Dryer (Hand Held)
+ApplianceID: 2100
 
-Location ID: 10000029
-Appliance Name: Lighting - Comp Fluorescent - 18 Watt
-ApplianceID: 2205
+Location ID: 10000023
+Appliance Name: Range - Small Surface Unit
+ApplianceID: 2101
 
-Location ID: 10000029
-Appliance Name: Refrigerator - 17 cu. ft - Frostfree
+Location ID: 10000030
+Appliance Name: Lighting - Chandelier 5 - 40 Watt Bulbs
 ApplianceID: 2206
 
-Location ID: 10000029
-Appliance Name: Fish Tank (10 Gallon)
+Location ID: 10000030
+Appliance Name: Lawn Equipment - Hedge Trimmer
 ApplianceID: 2207
 
-Location ID: 10000029
-Appliance Name: Toaster Oven
+Location ID: 10000030
+Appliance Name: Iron
 ApplianceID: 2208
 
-Location ID: 10000029
-Appliance Name: Lighting - 100 Watt
+Location ID: 10000030
+Appliance Name: Dishwasher (With Dry Cycle)
 ApplianceID: 2209
 
-Location ID: 10000029
-Appliance Name: Electric Frying Pan
+Location ID: 10000030
+Appliance Name: Refrigerator - 17 cu. ft - Frostfree
 ApplianceID: 2210
 
-Location ID: 10000029
-Appliance Name: Television - 60 inch
+Location ID: 10000030
+Appliance Name: Stereo
 ApplianceID: 2211
 
-Location ID: 10000029
+Location ID: 10000030
 Appliance Name: Refrigerator - 1.7 cu. ft.
 ApplianceID: 2212
 
-Location ID: 10000029
-Appliance Name: Refrigerator - Freezer 21 cu. ft.- Side by Side
+Location ID: 10000030
+Appliance Name: Compactor (Trash)
 ApplianceID: 2213
 
-Location ID: 10000029
-Appliance Name: Lawn Mower
+Location ID: 10000030
+Appliance Name: Telephone - Cordless
 ApplianceID: 2214
 
-Location ID: 10000029
-Appliance Name: Freezer - Upright/Chest 17 cu. ft
+Location ID: 10000030
+Appliance Name: Dishwasher (Without Dry Cycle)
 ApplianceID: 2215
 
-Location ID: 10000029
-Appliance Name: Television - 43 inch
+Location ID: 10000030
+Appliance Name: Range - Small Surface Unit
 ApplianceID: 2216
 
-Location ID: 10000029
-Appliance Name: Television - 27 inch
+Location ID: 10000030
+Appliance Name: Answering Machine
 ApplianceID: 2217
 
-Location ID: 10000029
-Appliance Name: Fan (Attic)
+Location ID: 10000030
+Appliance Name: Dishwasher (With Dry Cycle)
 ApplianceID: 2218
 
-Location ID: 10000029
-Appliance Name: Fan
+Location ID: 10000030
+Appliance Name: Television/DVD/VCR Combination
 ApplianceID: 2219
 
-Location ID: 10000029
-Appliance Name: Television - 19 inch
+Location ID: 10000030
+Appliance Name: Lighting - 10 rooms (15 60W)
 ApplianceID: 2220
 
-Location ID: 10000036
-Appliance Name: Lawn Equipment - Weed Eater
-ApplianceID: 2323
-
-Location ID: 10000036
-Appliance Name: Television - 32 inch
-ApplianceID: 2324
-
-Location ID: 10000036
-Appliance Name: Stereo
-ApplianceID: 2325
-
-Location ID: 10000036
-Appliance Name: Exercise Equipment - Treadmill 2 H.P.
-ApplianceID: 2326
-
-Location ID: 10000036
-Appliance Name: Lighting - 10 rooms (15 60W)
-ApplianceID: 2327
-
-Location ID: 10000036
-Appliance Name: Television/DVD/VCR Combination
-ApplianceID: 2328
-
-Location ID: 10000036
-Appliance Name: Freezer - Upright/Chest 17 cu. ft
-ApplianceID: 2329
-
-Location ID: 10000036
-Appliance Name: Lawn Equipment - Hedge Trimmer
-ApplianceID: 2330
-
-Location ID: 10000036
-Appliance Name: Bug Killer
-ApplianceID: 2331
-
-Location ID: 10000036
-Appliance Name: Television - 32 inch
-ApplianceID: 2332
-
-Location ID: 10000036
-Appliance Name: Fan (Window)
-ApplianceID: 2333
-
-Location ID: 10000036
-Appliance Name: Answering Machine
+Location ID: 10000038
+Appliance Name: Laptop
 ApplianceID: 2334
 
-Location ID: 10000036
-Appliance Name: Air Conditioner - 7000 BTU
+Location ID: 10000038
+Appliance Name: Refrigerator - Freezer 25 cu. ft. - Side by Side
 ApplianceID: 2335
 
-Location ID: 10000036
-Appliance Name: Television - 36 inch
+Location ID: 10000038
+Appliance Name: Air Conditioner - 10000 BTU
 ApplianceID: 2336
 
-Location ID: 10000036
-Appliance Name: Dishwasher (Without Dry Cycle)
+Location ID: 10000038
+Appliance Name: Air Purifier
 ApplianceID: 2337
 
-Location ID: 10000036
-Appliance Name: Television - 32 inch
+Location ID: 10000038
+Appliance Name: Television - 60 inch
 ApplianceID: 2338
 
-Location ID: 10000036
-Appliance Name: Television - 25 inch
+Location ID: 10000038
+Appliance Name: Range - Small Surface Unit
 ApplianceID: 2339
 
-Location ID: 10000036
-Appliance Name: Vacuum - Regular
+Location ID: 10000038
+Appliance Name: Television - 19 inch
 ApplianceID: 2340
 
-Location ID: 10000036
-Appliance Name: Computer with Monitor
+Location ID: 10000038
+Appliance Name: Television Plasma 42' - 50'
 ApplianceID: 2341
 
-Location ID: 10000096
-Appliance Name: Laptop
-ApplianceID: 3369
+Location ID: 10000038
+Appliance Name: Lighting - 60 Watt
+ApplianceID: 2342
 
-Location ID: 10000096
-Appliance Name: Laptop
-ApplianceID: 3370
+Location ID: 10000038
+Appliance Name: Electric Frying Pan
+ApplianceID: 2343
 
-Location ID: 10000096
+Location ID: 10000038
+Appliance Name: Oven
+ApplianceID: 2344
+
+Location ID: 10000038
+Appliance Name: Computer with Monitor
+ApplianceID: 2345
+
+Location ID: 10000038
+Appliance Name: Refrigerator - 14 cu. ft.
+ApplianceID: 2346
+
+Location ID: 10000038
+Appliance Name: Refrigerator - 1.7 cu. ft.
+ApplianceID: 2347
+
+Location ID: 10000038
 Appliance Name: Television - 60 inch
-ApplianceID: 3371
+ApplianceID: 2348
 
-Location ID: 10000096
-Appliance Name: Fax Machine
-ApplianceID: 3372
-
-Location ID: 10000096
-Appliance Name: Fish Tank (10 Gallon)
-ApplianceID: 3373
-
-Location ID: 10000096
-Appliance Name: Refrigerator - 19 cu. ft. - Frostfree
-ApplianceID: 3374
-
-Location ID: 10000096
-Appliance Name: Television - 13 inch
-ApplianceID: 3375
-
-Location ID: 10000096
-Appliance Name: Computer Printer (Printing)
-ApplianceID: 3376
-
-Location ID: 10000096
-Appliance Name: Television/DVD/VCR Combination
-ApplianceID: 3377
-
-Location ID: 10000096
-Appliance Name: Microwave Oven
-ApplianceID: 3378
-
-Location ID: 10000096
-Appliance Name: Air Conditioner - 7000 BTU
-ApplianceID: 3379
-
-Location ID: 10000096
-Appliance Name: Television - 36 inch
-ApplianceID: 3380
-
-Location ID: 10000096
-Appliance Name: Refrigerator - Freezer 24 cu. ft. - Frostfree
-ApplianceID: 3381
-
-Location ID: 10000096
-Appliance Name: Clothes Washer
-ApplianceID: 3382
-
-Location ID: 10000096
-Appliance Name: Refrigerator - Freezer 25 cu. ft. - Side by Side
-ApplianceID: 3383
-
-Location ID: 10000096
-Appliance Name: Lighting - Fluorescent 2 bulb
-ApplianceID: 3384
-
-Location ID: 10000096
-Appliance Name: Lighting - Comp Fluorescent - 18 Watt
-ApplianceID: 3385
-
-Location ID: 10000096
-Appliance Name: Lawn Equipment - Hedge Trimmer
-ApplianceID: 3386
-
-Location ID: 10000096
-Appliance Name: Microwave Oven
-ApplianceID: 3387
-
-Location ID: 10000096
-Appliance Name: Fan (Attic)
-ApplianceID: 3388
-
-Location ID: 3267
-Appliance Name: hello
-ApplianceID: 3459
+Location ID: 10000038
+Appliance Name: Iron
+ApplianceID: 2349
 

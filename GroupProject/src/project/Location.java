@@ -7,14 +7,15 @@ import java.io.IOException;
 
 public class Location {
 	private App[] applications;
-	private  int totalTurnedBrownOut = 0;
-	private  int totalTurnedOff = 0;
+	private  int totalTurnedBrownOut;
+	private  int totalTurnedOff;
 	// private boolean brownOut; // flag to indicate brown out condition
 
 	public Location() {
 		// numAppliactions=getNumApp;
 		applications = new App[2000];
-		
+		totalTurnedBrownOut=0;
+		 totalTurnedOff=0;
 		// brownOut = false;
 	}
 
@@ -79,7 +80,7 @@ public class Location {
 				
 			}
 		}
-		totalTurnedBrownOut++;
+		this.totalTurnedBrownOut++;
 
 	}
 	public void showLocations() {
@@ -96,7 +97,7 @@ public class Location {
 			}
 		}
 	}
-	public void numEffectedLocation() {
+	public int numEffectedLocation() {
 		int numLocEffected=0;
 		int currentID=applications[0].getlocationID();
 		
@@ -118,14 +119,16 @@ public class Location {
 			
 			
 		}
-		System.out.println("Num location effected: "+numLocEffected);
+		return numLocEffected;
+		//System.out.println("Num location effected: "+numLocEffected);
 	}
 	public void textFile() {
+		//IF OTHER USER WANTS TO USE IT CHANGE THE FILE THAT FITS FOR UR DEVICE
 		File detailFile = new File("/Users/adriansalcedo/git/SImulation/GroupProject/src/project/detailFile.txt");
 
 		try (FileWriter fileWriter = new FileWriter(detailFile);
 		     BufferedWriter writer = new BufferedWriter(fileWriter)) {
-		    writer.write("Here are the appliances that were affected uring the timestep");
+		    writer.write("Here are the appliances that were affected during the timestep");
 		    writer.newLine();
 		    for (int i = 0; i < applications.length+1; i++) {
 				if (applications[i] == null) {
@@ -184,24 +187,22 @@ public class Location {
 			if (applications[i] == null) {
 				break;
 			}
-			if(applications[i].isItOn()&&applications[i].getappliancetype()&&applications[i].getIsItSetToLow()) {
+			if(applications[i].isItOn()&&applications[i].getappliancetype()&&applications[i].isItSetToOn()) {
 				oneTempApp[k]=applications[i];
 				k++;
 			}
 		}
-		App[] twoTempApp = new App[k];
-		twoTempApp[0]=oneTempApp[0];
-		int left = 0;
+		
 		int right = k;
 		for (int i = 0; i < right+1; i++)
         {
-            // Find the minimum element in unsorted array
+            // Find the maximum element in unsorted array
             int max_idx = i;
             for (int j = i+1; j < right; j++) {
                 if (oneTempApp[j].getwattageOn() > oneTempApp[max_idx].getwattageOn())
                 	max_idx = j;
             }
-            // Swap the found minimum element with the first
+            // Swap the found maximum element with the first
             // element
             App temp = oneTempApp[max_idx];
             oneTempApp[max_idx] = oneTempApp[i];
@@ -217,16 +218,16 @@ public class Location {
 
 			
 	}
-	public void setLow(App[] app,int ID) {
+	public void setLow(int ID) {
 		for (int i = 0; i < applications.length; i++) {
 			if (applications[i] == null) {
 				break;
 			}
-			if(applications[i].getappID()==ID&&applications[i].getIsItSetToLow()) {
+			if(applications[i].getappID()==ID&&applications[i].isItSetToOn()) {
 				//break;
 				applications[i].lowvoltage();
 				applications[i].setEffected(true);
-				totalTurnedOff++;
+				this.totalTurnedOff++;
 			}
 			
 		}
@@ -244,25 +245,6 @@ public class Location {
 		applications[index] = app;
 	}
 
-	/**
-	 * @return the brownOut
-	 */
-	/*
-	 * public boolean isBrownOut() { return brownOut; }
-	 * 
-	 *//**
-		 * @param brownOut the brownOut to set
-		 *//*
-			 * public void setBrownOut(boolean brownOut) { this.brownOut = brownOut; }
-			 */
-
-	// method to get the array of locations in the building
-
-	// method to add a location to the building
-
-	// method to remove a location from the building
-
-	// method to check for brown out condition
 	
 
 }

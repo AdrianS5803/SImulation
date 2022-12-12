@@ -10,18 +10,8 @@ public class RegApp extends App
 		super(I,appName,O,prob,t);
 	}
 	
-	public void lowvoltage()
-	{
-		double lowvolt=(super.getwattageOn())-(super.getwattageOn()*0);
-		super.setonnwattage((int)lowvolt);
-		super.setItSetToLow(false);
-	}
-	
-	public void brownoutWatts(App application) 
-	{
-		int brownoutWatts = (super.getwattageOn())-(super.getwattageOn()*0);
-		super.setonnwattage(brownoutWatts);
-	}
+
+
 	
 	public String toString()
 	{
@@ -29,7 +19,7 @@ public class RegApp extends App
 
 		localApp ="Location ID: " + super.getlocationID()+"\nAppliance Name: " + super.getAppName()
 		+"\nApplianceID: " + super.getappID()+"\nWattageON: " + super.getwattageOn()
-		+"\nIs it a Smart Appliance: " + super.getappliancetype()+"\nIs it set to on: " + super.getIsItSetToLow()
+		+"\nIs it a Smart Appliance: " + super.getappliancetype()+"\nIs it set to on: " + super.isItSetToOn()
 		;
 		return localApp;
 	}
